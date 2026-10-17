@@ -8,7 +8,7 @@ public abstract class Device
     public string DeviceName { get; private set; }
     public int YearOfUsage { get; set; }
     public decimal PurchasePrice { get; }
-    public DeviceStatus Status { get; private set; }
+    public DeviceStatus Status { get; set; }
 
 //constructor
     protected Device(string deviceId, string deviceName, int yearOfUsage, decimal purchasePrice, DeviceStatus status = DeviceStatus.Active)

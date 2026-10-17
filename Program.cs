@@ -3,13 +3,11 @@ Nguyễn Minh Tuấn
 202419010 
 */
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 
 public class Program
 {
-    public static void Main(string[] args)
+    public static void Main1(string[] args)
     {
         Console.OutputEncoding = Encoding.UTF8;
 
