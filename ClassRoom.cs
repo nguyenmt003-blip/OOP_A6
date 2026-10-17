@@ -2,7 +2,7 @@
 Nguyễn Minh Tuấn
 202419010 
 */
-public class LabRoom
+public class ClassRoom
 {
     public string RoomId { get; }
     public string RoomName { get; private set; }
@@ -10,7 +10,7 @@ public class LabRoom
     private readonly List<Device> _devices = new();
 
     //constructor
-    public LabRoom(string roomId, string roomName, int capacity)
+    public ClassRoom(string roomId, string roomName, int capacity)
     {
         if (string.IsNullOrWhiteSpace(roomId))
             throw new ArgumentException("Mã phòng không được để trống.");

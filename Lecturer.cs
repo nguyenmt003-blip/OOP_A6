@@ -2,13 +2,13 @@
 Nguyễn Minh Tuấn
 202419010 
 */
-public class Lecture : IBorrower
+public class Lecturer : IBorrower
 {
     public string BorrowerId { get; }
     public string FullName { get; }
 
     //constructor 
-    public Lecture(string borrowerId, string fullName)
+    public Lecturer(string borrowerId, string fullName)
     {
         if (string.IsNullOrWhiteSpace(borrowerId))
             throw new ArgumentException("Mã giảng viên không được để trống.");
