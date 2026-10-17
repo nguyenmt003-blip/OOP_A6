@@ -22,14 +22,14 @@ public class Program
             // -------------------------------------------------------------
             // Bước 1: Tạo một giảng viên (sử dụng class Lecture của bạn)
             // -------------------------------------------------------------
-            IBorrower lecturer = new Lecture("GV001", "TS. Nguyễn Minh Tuấn");
+            IBorrower lecturer = new Lecturer("GV001", "TS. Nguyễn Minh Tuấn");
             Console.WriteLine($"[1] Đã tạo giảng viên: {lecturer.FullName} (Mã: {lecturer.BorrowerId}, Tối đa: {lecturer.GetMaximumDevices()} thiết bị)");
 
             // -------------------------------------------------------------
             // Bước 2: Tạo một điều khiển máy chiếu, một điều khiển điều hòa và một micro không dây
             // -------------------------------------------------------------
             Device projectorRemote = new ProjectorRemote("MC01", "Điều khiển máy chiếu Sony", 2022, 450000m);
-            Device acRemote = new AirConditionerRemote("DH01", "Điều khiển điều hòa Daikin", 2021, 300000m);
+            Device acRemote = new airConditionerRemote("DH01", "Điều khiển điều hòa Daikin", 2021, 300000m);
             Device microphone = new Microphone("MIC01", "Micro không dây Shure", 2023, 1200000m);
 
             Console.WriteLine("[2] Đã khởi tạo 3 thiết bị:");
